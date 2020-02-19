@@ -31,4 +31,35 @@ public class Task3Test {
         Assert.assertEquals(9, inst.getMaxProduct(new int[]{3, 1, 3, 3, 1}));
     }
 
+    @Test
+    public void test_getABpercentage() {
+        Task3 inst = new Task3();
+
+        Assert.assertEquals(40, inst.getABpercentage("fatyb"));
+        Assert.assertEquals(60, inst.getABpercentage("aBgac"));
+        Assert.assertEquals(16, inst.getABpercentage("nbyurt"));
+    }
+
+    @Test
+    public void test_isPalindrome() {
+        Task3 inst = new Task3();
+
+        Assert.assertTrue(inst.isPalindrome("радар"));
+        Assert.assertTrue(inst.isPalindrome("топот"));
+        Assert.assertTrue(inst.isPalindrome("ротатор"));
+        Assert.assertTrue(inst.isPalindrome("акка"));
+        Assert.assertFalse(inst.isPalindrome("итмо"));
+        Assert.assertFalse(inst.isPalindrome("тапок"));
+    }
+
+    @Test
+    public void test_getEncodedString() {
+        Task3 inst = new Task3();
+
+        Assert.assertEquals("a3b3c1a2c1b1", inst.getEncodedString("aaabbbcaacb"));
+        Assert.assertEquals("a7", inst.getEncodedString("aaaaaaa"));
+        Assert.assertEquals("a1b2a1", inst.getEncodedString("abba"));
+        Assert.assertEquals("b1", inst.getEncodedString("b"));
+    }
+
 }

@@ -20,4 +20,30 @@ public class Task3 {
     int getMaxProduct(int[] inputArray) {
         return 0; //your code here
     }
+
+    /**
+     * Напишите функцию, которая вычисляет процент символов 'A' и 'B' (латиница) во входной строке.
+     * Функция не должна быть чувствительна к регистру символов.
+     * Результат округляйте путем отбрасывания дробной части.
+     *
+     * Пример: acbr -> 50
+     */
+    int getABpercentage(String input) {
+        return 0; //your code here
+    }
+
+    /**
+     * Напишите функцию, которая определяет, является ли входная строка палидромом
+     */
+    boolean isPalindrome(String input) {
+        return false; //your code here
+    }
+
+    /**
+     * Напииште функцию, которая принимает строку вида "bbcaaaak" и кодирует ее в формат вида "b2c1a4k1",
+     * где группы одинаковых символов заменены на один символ и кол-во этих символов идущих подряд в строке
+     */
+    String getEncodedString(String input) {
+        return ""; //your code here
+    }
 }
